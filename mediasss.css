@@ -1,0 +1,70 @@
+@media (max-width : 768px){
+    header{
+        padding: 0;
+        height: 10rem;
+    }
+    nav a img{
+       display: none;
+    }
+    
+    nav a .img-mobile{
+        display: block;
+        width: 14rem;
+        height: 9rem;
+        object-fit: cover;
+        position: absolute;
+        z-index: 2;
+        left: 10px;
+        top: 4px;
+     
+
+    }
+    nav ul{
+        flex-direction: column;
+        background-color: black;
+        position: fixed;
+        top: 100px;
+        width: 100%;
+        border-radius: 0 0 0 18px;
+        padding: 0 0 2rem 2rem;
+        align-items: flex-start;
+        /*para que nuestra barra  de navegacion se pueda ver aun si el dispositivo es pequeño de altura*/
+        height: calc(100% - 10rem);
+        overflow-y: auto;
+        left: 100%;
+        transition: left 0.3s;
+        cursor: pointer;
+        z-index: 2;
+    }
+    .capa{
+        top: 10rem;
+    }
+    .title-info{
+        top: calc(100% - 60%);
+        
+    }
+    nav ul li{
+        margin-left: 0;
+        margin-top: 2rem;
+    }
+    .toggle{
+        display: block;
+        margin-right: 2rem;
+        z-index: 2;
+    }
+    .nav-menu-visible{
+        left: 0%;
+
+    } 
+    .toggle:hover{
+        color: #A95415;
+    }
+    .section-info-img{
+        grid-template-columns: 1fr;
+    }
+    .section-info-img img{
+        width: 100%;
+        height: 19rem;
+        object-fit: cover;
+    }
+}
